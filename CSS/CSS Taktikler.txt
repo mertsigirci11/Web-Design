@@ -1,0 +1,55 @@
+display: inline-block; 
+	block özelliğe sahip elementleri inline yapar ve 
+	boyut vermemize olanak sağlar.
+
+*******************************************************************************************************
+
+GROUP SELECTORS
+
+    1 : (*)     => Tüm etiketleri seçer.
+    2 : (p)     => Tüm p etiketlerini seçer.
+    3 : (div p) => Div içindeki tüm p etiketlerini seçer.
+    4 : (div,p) => Tüm div ve tüm p etiketlerini seçer.
+    5 : (div>p) => "Bir" üst etiketi div olan tüm p etiketlerini seçer.
+    6 : (p~div) => P ile aynı seviyede olan tüm div etiketlerini seçer.
+    7 : (p+div) => P etiketinden "bir" sonra gelen tüm div etiketlerini seçer.
+
+*******************************************************************************************************
+
+overflow: auto;
+	taşmayı önler.
+
+*******************************************************************************************************
+
+Inline elemanlara genişlik ve yükseklik verilemez. Ama "display: inline-block" etiketi
+sayesinde verilebilir.
+
+Block elemanlara genişlik yükseklik verilebilir. Inline'a çevrilince verilemez.
+
+*******************************************************************************************************
+
+POSITIONS
+
+Position ile istediğimiz bir nesnenin sayfa üzerindeki konumunu belirtebiliyoruz.
+Position özelliğinin alabileceği 5 tane farklı değer vardır:
+
+	1-static(default)
+
+	2-relative: -Normal pozisyonu baz alınarak farklı yönlere(left,right,bottom,top) konumlandırılır.
+	
+	3-fixed:    -Bir nesneyi yatay ve dikey kaydırma çubuklarından etkilenmeden sabir bir yerde
+		     konumlandırmak için kullanırız. Örneğin sayfanın sağ alt köşesinde 
+	  	     bulunan canlı sohbet menüsü gibi 
+	
+	4-absolute: -Nesne normal akışın-konumun dışına çıkar.
+		    -4 köşeden konumlandırma yapmamızı sağlar.
+		    -Relative ile Absolute nesnelerin farkınormal akış içinde olup olmadığı farkıdır.
+		    -absolute olan nesne kendinden önce gelen nesnelerin kapladığı yer ile 
+		     ilgilenmeden sayfanın sol üst köşesinden itibaren konumlandırma yapar.
+
+	5-sticky:   -Kaydırma çubuklarını takip eder ve istenilen pozisyon yakalandığında
+		     nesneyi o noktada sabitler. Örneğin bir nesne için yukarıdan 0 konumuna 
+		     geldiğimiz anda nesnenin sabitlenmesini isteyebiliriz. 
+		     Genelde menüler için sticky postion kullanılır.
+
+*******************************************************************************************************
