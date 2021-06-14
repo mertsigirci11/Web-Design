@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste İşlemleri</title>
+</head>
+
+
+
+<body>
+    <p>
+        HTML sayfalarında liste oluşturmak için
+        <br>
+        "ol" ve "ul" tagları kullanılır.
+        <br><br>
+        <strong>ol tagı:</strong> ordered list anlamına gelir.
+        <br>
+        Yani listeleri sıralı bir şekilde oluşturmaya yarar.
+        <br><br>
+        ol tagının farklı stilleri vardır:
+        <br>
+        - 
+        <br>
+        -
+        <br>
+
+        <br><br><br><br>
+        <strong>ul tagı:</strong> unordered list anlımına gelir.
+        <br>
+        Yani listeleri sırasız bir şekilde oluşturmaya yarar.
+    </p>
+
+    <!--
+        Liste taglarının farklı stilleri vardır:
+
+            armenian: Ermeni alfabesi ile sıralar.
+            circle: İçi boş halkalar koyar.
+            decimal: Latin sayıları ile sıralar.
+            decimal-leading-zero: Sayıların önüne 0 koyarak sıralar
+            disc: İçi dolu daireler ile sıralar.
+            lower-alpha ve lower-latin: Küçük latin harfleri ile sıralar.
+            lower-roman: Küçük roma rakamları ile sıralar.
+            square: İçi dolu kare ile sıralar.
+            upper-alpha ve upper-latin: Büyük latin harfleri ile sıralar.
+            upper-roman: Büyük roma rakamları ile sıralar.
+            
+            reversed="reversed" stili verilirse liste büyükten küçüğe sıralanır.
+
+        NOT: Bazı tagları kullanırken listenin özelliği değişebilir.
+             Mesela sırasız listeye upper-alpha stilini verirsek liste
+             sıralı listeye dönüşür. Keza sıralı listeye de square stilini
+             verirsek liste sırasız listeye dönüşür.
+
+    -->
+
+    <!-- Hadi şimdi örnek listeler oluşturalım -->
+
+    <ol style="border: 3px solid brown ; width: 20%; float: left; margin: 1cm;">
+        <h3>2. Sınıf Güz Dönemi</h3>
+        <li>Veri Yapıları</li>
+        <li>Veritabanı Yönetim Sistemleri</li>
+        <li>Mantık Devreleri</li>
+        <li>Sayısal Analiz</li>
+        <li>Atatürk İlkeleri ve İnkılap Tarihi</li>
+        <li>Elektronik Devreler ve Laboratuvarı</li>
+
+    </ol>
+
+    <ol style="border: 3px solid brown ; width: 20%; float: left; margin: 1cm; list-style: upper-roman;">
+        <h3>2. Sınıf Bahar Dönemi</h3>
+        <li>Diferansiyel Denklemler</li>
+        <li>Mikroişlemciler ve Laboratuvarı</li>
+        <li>Bilgisayar Organizasyonu</li>
+        <li>Programlama Dillerinin Prensipleri</li>
+        <li>Nesne Yönelimli Analiz ve Tasarım</li>
+        <li>Ayrık İşlemsel Yapılar</li>
+
+    </ol>
+
+    <ol style="border: 3px solid brown ; width: 20%; float: left; margin: 1cm; list-style: decimal-leading-zero; " reversed="reversed">
+        <h3>3. Sınıf Güz Dönemi</h3>
+        <li>İşaretler ve Sistemler</li>
+        <li>Veri İletişimi</li>
+        <li>Web Programlama</li>
+        <li>İşletim Sistemleri</li>
+        <li>Nesnelerin İnterneti</li>
+        <li>Biçimsel Diller ve Soyut Makineler</li>
+    </ol>
+
+    <br>
+
+    <ul style="border: 3px solid darkorchid; width: 20%; float: left; margin: 1cm; ">
+        <h3 style="text-align: center;">Meyveler</h3>
+        <li>Armut</li>
+        <li>Elma</li>
+        <li>Ayva</li>
+        <li>Erik</li>
+        <li>İncir</li>
+    </ul>
+
+    <ul style="border: 3px solid darkorchid; width: 20%; float: left; margin: 1cm;">
+        <h3>Bilgisayar Bileşenleri</h3>
+        <li>Bilgisayar</li>
+        <li>Klavye</li>
+        <li>Hoparlör</li>
+        <li>Fare</li>
+        <li>Anakart</li>
+    </ul>
+
+    <!--Son olarak liste içinde liste örneğini yapalım-->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <ol type="1" style="border: 3px solid limegreen; width: 20%; margin: 1cm;">
+        <li>Frontend</li>
+            <ol type="i">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+            </ol>
+        <li>Backend</li>
+            <ol type="i">
+                <h3>.NET</h3>
+                <li>C#</li>
+                <li>ASP.net</li>
+                <li>ASP.net Core</li>
+            </ol>
+            <ol type="i">
+                <h3>JAVA</h3>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Java Server Faces - Pages</li>
+            </ol>
+    </ol>
+
+    
+
+</body>
+
+
+</html>

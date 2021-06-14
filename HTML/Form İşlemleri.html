@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form İşlemleri</title>
+
+    <style>
+        .info
+        {
+            font-style: normal;
+            font-weight: 600;
+            width: 6cm;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #dis
+        {
+            border-radius: 10px ;
+            border: 1px solid burlywood;
+            background-color: burlywood;
+            width: 80%;
+            
+            margin: 1cm;
+            margin: auto;
+        }
+        
+
+        #ic
+        {
+            border-radius: 20px;
+            border: 1px solid wheat;
+            background-color: wheat;
+            width: 50%;
+            height: 10cm;
+            margin: 1cm;
+            margin: auto;
+        }
+        
+    </style>
+
+</head>
+
+    <!--
+        -> Form oluşturmak için "form" tag'ı kullanılır.
+        
+        -> Forma isim vermek için "name" özelliği kullanılır.
+        
+        -> Forma girilen verilerin hangi sayfaya gönderileceğini
+        belirlemek için "action" özelliği kullanılır.
+        
+        -> Verilerin hedef sayfaya gönderilme yöntemini belirlemek
+        için ise "method" özelliği kullanılır.
+
+        -> "method" özelliğinin değeri "GET" veya "POST" olur.
+        GET metodu: Verileri adres çubuğunda görünür şekilde gönderir.
+        POST metodu: Verileri gizli şekilde gönderir.
+    -->
+
+    <!--
+        -> Metin Kutusu: Kullanıcan sayısal veya sözel veriler almak için kullanılır.
+        
+    -->
+
+<body>
+    
+    <article id=dis >
+        <br><br><br>
+        <div id=ic>
+            <table>
+                <form action="" method="post">
+                    <tr>
+                        <td class="info">Ad ve Soyad: </td>
+                        <td>     
+                            <input type="text" name="ad_soyad" id="ad_soyad" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="info">Kullanıcı Adı: </td>
+                        <td>
+                            <input type="text" name="nickname" id="nickname" required>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Şifre</td>
+                        <td>
+                            <input type="password" name="password" id="password" required>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td class="info">E-Posta: </td>
+                        <td>
+                            <input type="email" name="mail" required>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Hangi Ülke Vatandaşısınız: </td>
+                        <td>
+                            <select name="ulke" id="ulke">
+                                <option value="Turkey">Türkiye</option>
+                                <option value="Germany" selected>Almanya</option>
+                                <option value="Italy">İtalya</option>
+                                <option value="USA">ABD</option>
+                                <option value="England">İngiltere</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Yaşadığınız Şehir: </td>
+                        <td>
+                            <select name="sehir" id="sehir">
+                                <option value="Sakarya">Sakarya</option>
+                                <option value="Hamburg" selected>Hamburg</option>
+                                <option value="Roma">Roma</option>
+                                <option value="Washington">Washington</option>
+                                <option value="London">Londra</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Doğum Tarihiniz: </td>
+                        <td>
+                            <input type="date" name="birthday" id="birthday" required>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Adresiniz: </td>
+                        <td>
+                            <textarea name="adres" id="adres" cols="25" rows="5"></textarea>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Cinsiyetiniz: </td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Erkek
+                            <input type="radio" name="gender" value="female">Kadın
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="info">Sevdiğiniz Spor Dalları: </td>
+                        <td>
+                            <input type="checkbox" name="sport" class="sport" value="Football">Futbol
+                            <input type="checkbox" name="sport" class="sport" value="Basketball">Basketbol
+                            <input type="checkbox" name="sport" class="sport" value="Volleyball">Voleybol
+                        </td>
+                    </tr>
+                    <br>
+                </table>
+                    <input type="submit" value="Üye Ol">
+                    <input type="reset" value="Temizle">
+                </form>
+        </div>
+        <br><br><br>
+    </article>
+
+
+
+
+
+
+    
+</body>
+
+</html>
