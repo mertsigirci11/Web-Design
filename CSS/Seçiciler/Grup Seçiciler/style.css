@@ -1,0 +1,58 @@
+/* GROUP SELECTORS
+
+    1 : *     => Tüm etiketleri seçer.
+    2 : p     => Tüm p etiketlerini seçer.
+    3 : div p => Div içindeki tüm p etiketlerini seçer.
+    4 : div,p => Tüm div ve tüm p etiketlerini seçer.
+    5 : div>p => "Bir" üst etiketi div olan tüm p etiketlerini seçer.
+    6 : p~div => P ile aynı seviyede olan ve p den sonra gelen tüm div etiketlerini seçer.
+    7 : p+div => P etiketinden "bir" sonra gelen tüm div etiketlerini seçer.
+
+*/
+
+*{
+    border: 1px solid blueviolet;
+}
+
+p{
+    background-color: burlywood;
+}
+
+div p{
+    color: mediumblue;
+}
+
+.container div{
+    /*
+        container altındaki bütün divleri seçer
+    */
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container div.box{
+    /*
+        container altındaki class ı box olan divi seçer.
+        div den sonra boşluk bırakırksan container altındaki divin, altındaki box class ını seçmiş oluruz.
+    */
+    text-align: center;
+}
+
+div.box,p{
+    /*
+        divlerden classı box olanları ve tüm p leri seçer.
+    */
+    font-size: 25px;
+}
+
+div>p{
+    padding: 4%;
+}
+
+p~div{
+    background-color: aquamarine;
+}
+
+p+div{
+    text-decoration: line-through;
+}

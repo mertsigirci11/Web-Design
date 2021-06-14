@@ -1,0 +1,47 @@
+p[title]{
+    border: 1px solid black;
+    border-radius: 100%;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    font-size: 150%;
+}
+
+p[title="third paragraph"]{
+    background-color: wheat;
+}
+
+p[title="fourth paragraph"]{
+    background-color: crimson;
+}
+
+p[title~="fourth"]{
+    font-weight: bolder;
+    /*
+        Tilda(~) işareti sayesinde kelimenin
+        geçmesi seçim için yeterli kılınır.
+    */
+}
+
+a[href^="http"]{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*
+        (^) işareti başlangıcında olan degerin
+        geçmesiyle seçim yapmayı sağlar.
+    */
+}
+
+a[href$="com"]{
+
+    text-decoration: none;
+    /*
+        ($) işareti sonunda olan değerin
+        geçmesiyle seçim yapmayı sağlar.
+    */
+}
+
+a[href$="twitter.com"][target="_blank"]{
+    font-size: 20px;
+    color: coral;
+}
+

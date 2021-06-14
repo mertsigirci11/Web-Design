@@ -1,0 +1,34 @@
+#container{
+    width: 90%;
+    padding: 5%;
+    background-color: rgb(164, 196, 255);
+}
+
+#blog-post-container{
+    width: 55%;
+    padding: 2%;
+    background-color:rgb(169, 255, 226);
+}
+
+#other-posts{
+    width: 20%;
+    padding: 2%;
+    background-color: rgb(255, 182, 155);
+}
+
+#author-box{
+    width: 20%;
+    height: 20%;
+}
+
+#author-box img{
+    border: currentColor;
+    width: 100%;
+    height: 100%;
+}
+
+#other-posts div#tags p{
+    font-weight: bold;
+    display: inline-block;
+} 
+

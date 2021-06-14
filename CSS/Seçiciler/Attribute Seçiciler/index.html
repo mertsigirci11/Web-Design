@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Seçiciler</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <h1>Attribute Selectors</h1>
+
+    <p>
+        Bu title attribute'ü olmayan paragraftır.
+    </p>
+
+    <p title="second">
+        p[title] : title attribute'ü içeren tüm paragrafları seçer.
+        
+    </p>
+
+    <p title="third paragraph">
+        p[title~="paragraph"] : paragraph sözcüğünü içeren title attribute'üne sahip olan tüm paragrafları seçer.
+    </p>
+
+    <p title="fourth paragraph">
+        p[title="#4 paragraph"] : title attribute'üne yazılan tam metni içeren tüm paragrafları seçer.
+        Eşleşmeler büyük / küçük harfe duyarlıdır ve boşluk dahil harf için harfle eşleşmelidir.
+    </p>
+
+    <p>
+        <a href="https://www.google.com" target="_blank">GOOGLE</a>
+        <a href="https://twitter.com" target="_blank">TWITTER</a>
+    </p>
+
+    <p>
+        <input type="text" name="Name">
+        <input type="button" value="Button">
+    </p>
+
+
+</body>
+
+</html>

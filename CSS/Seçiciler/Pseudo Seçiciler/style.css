@@ -1,0 +1,111 @@
+/*Pseudo Element*/
+p::first-line{
+    color: brown;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+p::first-letter{
+    font-size: 210%;
+}
+
+p::after{
+    content: "-deneme";
+    display: block;
+}
+
+
+
+
+
+/*Pseudo Class*/
+
+
+p.about::first-line{
+    text-decoration: line-through;
+    height: 15%;
+}
+
+ul li:first-child{
+    background-color: coral;   
+}
+
+ul li:nth-child(2){
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+ul li:nth-last-child(2){
+    background-color: darkseagreen;
+    text-align: center;
+}
+
+ul li:last-child{
+    background-color: goldenrod;
+
+
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 100px;
+    
+
+}
+
+ul li:nth-of-type(even){
+    border-style: dashed;
+    /*
+        Her çift elemana uygular
+    */
+}
+
+ul li:nth-of-type(odd){
+    border-style: dotted;
+    /*
+        Her tek elemana uygular
+    */
+}
+
+a{
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+a:link{
+    color: turquoise;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    background-color: chartreuse;
+}
+
+a:active{
+    font-size: larger;
+}
+
+span.span1{
+    display: none;
+    background: cornflowerblue;
+    padding: 20px;
+}
+
+div.class1:hover span{
+    display: block;
+}

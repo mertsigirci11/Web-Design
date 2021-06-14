@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ID & Class Uygulama</title>
+
+    <style>
+        .box{
+            width: 300px ;
+            height: 300px;
+            border: 3px solid black;
+            display: inline-block;
+        }
+        /*
+            display: inline-block; özelliği
+            block özelliğe sahip elementleri
+            inline yapar ve boyut vermemize
+            olanak sağlar.
+        */
+        #baslik{
+            height: 150px;
+        }
+        .kirmizi{
+            background-color: red;
+        }
+        .mavi{
+            background-color: blue;
+        }
+        .turuncu{
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="baslik" class="mavi">Oyun Başlığı</div>
+    <div class="box kirmizi">Kutu #1</div>
+    <div class="box mavi">Kutu #2</div>   
+    <div class="box turuncu">Kutu #3</div>
+
+</body>
+
+</html>
