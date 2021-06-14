@@ -1,0 +1,34 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 5px;
+    color: azure;
+    font-weight: bolder;
+    text-align: center;
+    
+    display: inline-block;
+    /*
+        Bu özellik ile block elementleri inline'a çevrilir.
+        Ayrıca yükseklik değerlerinin oynanmasına izin verildi.
+    */
+}
+
+#second{
+    /*
+        display: none;
+        Bu özellik ile seçili eleman sayfada gösterilmez.
+    */
+    display: inline;
+    /*
+        Bu özellik ile block element inline'a çevrildi ama
+        yükseklik değerleri değiştirilmesi engellendi.
+    */
+}
+
+span{
+    display: block;
+    /*Bu etiket ile inline etiketler block etikete çevrilir.*/
+    background-color: cadetblue;
+    width: 50%;
+}
