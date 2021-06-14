@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+#first{
+    background-color: rgb(194, 129, 255);
+    margin: auto;
+    /*ortalar*/
+    margin-top: 20px;
+    padding: 30px;
+}
+
+#second{
+    background-color: rgb(120, 201, 120);
+    margin:40px;
+    padding-left: 50px;
+}
+
+#third{
+    background-color: rgb(216, 214, 102);
+    margin-left: 140px;
+    margin-top: 3px;
+    padding-bottom: 60px;
+}

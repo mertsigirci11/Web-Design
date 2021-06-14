@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing & Box Model</title>
+    
+    <style>
+        .box{
+            width: 300px;
+            height: 230px;
+            margin-bottom: 10px;
+        }
+        #box1{
+            background-color: rgb(182, 120, 240);
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #box2{
+            background-color: rgb(191, 235, 148);
+            box-sizing: content-box; /*default*/
+            padding: 10px;
+        }
+        p{
+            border: 1px solid rgb(36, 35, 35);
+        }
+        #hesap1{
+            padding: 10px;
+            border: 10px solid black;
+        }
+        #hesap2{
+            box-sizing: border-box;
+            padding: 10px;
+            border: 10px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box" style="background-color: rgb(218, 167, 100) ;">
+        Aşağıdakilerle kıyaslama yapılacak div
+    </div>
+   
+    <div id="box1" class="box">
+        <p>
+            "box-sizing: border-box"
+            <br>
+            olduğu için görüntü bozulmadı.
+        </p>
+    </div>
+
+    <div id="box2" class="box">
+        <p>
+            "box-sizing: content-box"
+            <br>
+            olduğu için görüntü bozuldu.
+        </p>
+    </div>
+
+    <div class="box" id="hesap1" style="background-color: rgb(86, 187, 221);">
+        300px width genişlik boyutu
+        <br>
+        10px + 10px = 20px padding genişlik boyutu 
+        <br>
+        10px + 10px = 20px border genişlik boyutu
+        <br>
+        <b style="color: rgb(32, 0, 0);">TOPLAM = 440px genişlik boyutu</b>
+
+    </div>
+
+    <div class="box" id="hesap2" style="background-color: rgb(212, 127, 127);">
+        <br>
+        260px kırmızı alan genişlik boyutu
+        <br>
+        10px + 10px = 20px padding genişlik boyutu 
+        <br>
+        10px + 10px = 20px border genişlik boyutu
+        <br>
+        <b style="color: rgb(32, 0, 0);">TOPLAM = width olmalı => 300px</b>
+
+    </div>
+
+</body>
+
+</html>
