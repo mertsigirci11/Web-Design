@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Biçimlendirme</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            width: 700px;
+            margin: 30px auto;
+        }
+        p{
+            font-family: 'Kite One', sans-serif;;
+        }
+        h2{
+            font-family: 'Goblin One', cursive;
+        }
+        p#first{
+            text-align: right;
+        }
+        p#second{
+            text-align: center;
+        }
+        p#third{
+            text-align: left;/*Default*/
+            column-count: 3;
+            -webkit-column-count: 3 ; /*Chrome, Safari, Opera tarayıcıda çalışması için*/
+            -moz-column-count: 3; /*Mozilla tarayıcıda çalışması için*/
+            
+            column-rule: 2px solid darkmagenta;/*Paragraflar bölününce araya çizgi çeker*/
+            -webkit-column-rule: 2px solid darkmagenta;
+            -moz-column-rule: 2px solid darkmagenta;
+            
+            border: 2px solid darkmagenta;
+            -webkit-border: 2px solid darkmagenta;
+            -moz-border: 2px solid darkmagenta;
+            
+            padding: 10px;
+            -webkit-padding: 10px;
+            -moz-padding: 10px;
+        }
+        div#div1{
+            text-align: right;
+            /*
+                a elemaı inline olduğu için biçimlendirme yapılamaz:
+                O yüzden div içine aldık, divi sağa koyduk.
+            */
+        }
+        a{
+            text-decoration: none;
+            color: rgb(66, 46, 196);
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </h2>
+    <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+    </p>
+    <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+    </p>
+    <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea enim provident alias placeat aliquam eligendi quidem quibusdam 
+        sequi. Nihil officia sequi deserunt amet cumque obcaecati.
+    </p>
+
+    <div id="div1">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+</body>
+
+</html>
