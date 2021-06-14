@@ -1,0 +1,10 @@
+a{
+    color: brown;
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    border: 1px solid tomato;
+}
+
